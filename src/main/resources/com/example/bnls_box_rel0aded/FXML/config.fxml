@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bnls_box_rel0aded.configController">
+   <children>
+      <ImageView fx:id="wallpaperView" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/wall4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="selector" blendMode="OVERLAY" fitHeight="150.0" fitWidth="311.0" layoutX="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Selector.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="darkBackground" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/wall4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="556.0" layoutY="16.0" text="Initialisation" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="21.0" layoutY="107.0" prefHeight="517.0" prefWidth="1238.0">
+         <children>
+            <VBox prefHeight="517.0" prefWidth="1238.0">
+               <children>
+                  <HBox prefHeight="495.0" prefWidth="1210.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="604.0" prefWidth="633.0">
+                           <children>
+                              <Label fx:id="playerTitle1" text="Joueur 1" textFill="WHITE">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="200.0" prefWidth="625.0">
+                                 <children>
+                                    <ImageView fx:id="imagePlayer1" fitHeight="150.0" fitWidth="150.0" layoutX="237.0" layoutY="25.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../Image/Player1%20Default.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="imagePicker1" fitHeight="59.0" fitWidth="75.0" layoutX="279.0" layoutY="71.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Image/Select%20File.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <TextField fx:id="fieldPlayer1" alignment="CENTER" onAction="#check" onKeyTyped="#check" prefHeight="33.0" prefWidth="540.0" promptText="Entrez votre nom">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="100.0" right="100.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="typePlayerHumanComput1" text="Type de joueur : " textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="50.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox prefHeight="100.0" prefWidth="203.0">
+                                       <children>
+                                          <RadioButton fx:id="human1" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" selected="true" text="Humain" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="computer1" mnemonicParsing="false" prefHeight="30.0" prefWidth="202.0" text="Ordinateur" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                       <padding>
+                                          <Insets left="50.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox fx:id="computerOption1" disable="true" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="typeComput1" text="Type d'ordinateur : " textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox prefHeight="100.0" prefWidth="280.0">
+                                       <children>
+                                          <RadioButton fx:id="optionCrazy1" mnemonicParsing="false" selected="true" text="Stupide" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="optionClever1" mnemonicParsing="false" text="Intelligent" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="604.0" prefWidth="633.0">
+                           <children>
+                              <Label fx:id="playerTitle2" text="Joueur 2" textFill="WHITE">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="200.0" prefWidth="625.0">
+                                 <children>
+                                    <ImageView fx:id="imagePlayer2" fitHeight="150.0" fitWidth="150.0" layoutX="237.0" layoutY="25.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../Image/Player2%20Default.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="imagePicker2" fitHeight="59.0" fitWidth="75.0" layoutX="279.0" layoutY="71.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Image/Select%20File.png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <TextField fx:id="fieldPlayer2" alignment="CENTER" onAction="#check" onKeyTyped="#check" prefHeight="25.0" prefWidth="400.0" promptText="Entrez votre nom">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="100.0" right="100.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="typePlayerHumanComput2" text="Type de joueur : " textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox prefHeight="100.0" prefWidth="203.0">
+                                       <children>
+                                          <RadioButton fx:id="human2" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" selected="true" text="Humain" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="computer2" mnemonicParsing="false" prefHeight="30.0" prefWidth="202.0" text="Ordinateur" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox fx:id="computerOption2" disable="true" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="typeComput2" text="Type d'ordinateur : " textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox prefHeight="100.0" prefWidth="280.0">
+                                       <children>
+                                          <RadioButton fx:id="optionCrazy2" mnemonicParsing="false" selected="true" text="Stupide" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="optionClever2" mnemonicParsing="false" text="Intelligent" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefWidth="270.0" text="Premier joueur à jouer :" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="turnPlayer1" mnemonicParsing="false">
+                           <HBox.margin>
+                              <Insets left="100.0" right="200.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="100.0" />
+                           </padding>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="toggleTurnPlayer" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="turnPlayerAlea" mnemonicParsing="false" prefHeight="21.0" prefWidth="259.0" selected="true" text="Aléatoire" textFill="WHITE" toggleGroup="$toggleTurnPlayer">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="turnPlayer2" mnemonicParsing="false" toggleGroup="$toggleTurnPlayer">
+                           <HBox.margin>
+                              <Insets left="50.0" right="100.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="100.0" right="200.0" />
+                           </padding>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Button fx:id="playButton" disable="true" layoutX="1166.0" layoutY="681.0" mnemonicParsing="false" onAction="#lunch" prefHeight="25.0" prefWidth="100.0" text="Jouer" />
+      <Button layoutX="14.0" layoutY="681.0" mnemonicParsing="false" onAction="#returnButton" prefWidth="100.0" text="Menu principal" />
+      <Slider fx:id="sliderSquare" blockIncrement="1.0" layoutX="360.0" layoutY="676.0" majorTickUnit="1.0" max="30.0" min="3.0" minorTickCount="0" prefHeight="37.0" prefWidth="670.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Label fx:id="numberSquare" layoutX="1050.0" layoutY="673.0" text="3" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="numberTitle" layoutX="221.0" layoutY="673.0" text="Nombre de cases" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ProgressIndicator fx:id="progressTemp" layoutX="1134.0" layoutY="679.0" prefHeight="30.0" prefWidth="28.0" visible="false" />
+   </children>
+</Pane>

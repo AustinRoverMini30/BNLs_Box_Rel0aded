@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bnls_box_rel0aded.settingsController">
+   <children>
+      <ImageView fx:id="wallpaperView" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/wall4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="darkBackground" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="selector" blendMode="OVERLAY" fitHeight="150.0" fitWidth="311.0" layoutX="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Selector.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="580.0" layoutY="16.0" text="Paramètres" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="returnButton" fitHeight="43.0" fitWidth="43.0" layoutX="1223.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../Image/arrow.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TabPane fx:id="tabPane" layoutX="-5.0" layoutY="-5.0" prefHeight="785.0" prefWidth="1229.0" rotateGraphic="true" side="LEFT" styleClass="style.css" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="versionTab" style="-fx-pref-width: 180; -fx-pref-height: 180; -fx-padding: 0 0 0 0;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="661.0" prefWidth="1095.0">
+                     <children>
+                        <Label fx:id="titleVersion" layoutX="64.0" layoutY="124.0" text="Version" textFill="WHITE" underline="true">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="gameVer" layoutX="64.0" layoutY="283.0" text="BNL's Box Rel0aded Game :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="updateVer" layoutX="64.0" layoutY="363.0" text="BNL's Box Rel0aded Update Utility :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="searchUpdateButton" fitHeight="117.0" fitWidth="326.0" layoutX="359.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Search_update.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label fx:id="searchUpdateResult" alignment="CENTER" layoutX="387.0" layoutY="661.0" prefHeight="21.0" prefWidth="270.0" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="javaTab" style="-fx-pref-width: 180; -fx-pref-height: 180; -fx-padding: 0 0 0 0;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <children>
+                        <ProgressBar layoutX="222.0" layoutY="563.0" prefHeight="27.0" prefWidth="600.0" />
+                        <ImageView fitHeight="347.0" fitWidth="616.0" layoutX="214.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Work%20In%20Progress.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="442.0" layoutY="520.0" text="Bientôt disponible" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="optionsTab" style="-fx-pref-width: 180; -fx-pref-height: 180; -fx-padding: 0 0 0 0;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <children>
+                        <ProgressBar layoutX="222.0" layoutY="563.0" prefHeight="27.0" prefWidth="600.0" />
+                        <ImageView fitHeight="347.0" fitWidth="616.0" layoutX="214.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Work%20In%20Progress.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="442.0" layoutY="520.0" text="Bientôt disponible" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="customTab" style="-fx-pref-width: 180; -fx-pref-height: 180; -fx-padding: 0 0 0 0;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="previewWallpaper1" fitHeight="93.0" fitWidth="274.0" layoutX="61.0" layoutY="237.0" onMouseClicked="#wallpaperClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/wall1.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label fx:id="previewText" layoutX="55.0" layoutY="522.0" text="Couleur du texte :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ColorPicker fx:id="colorSelector" layoutX="278.0" layoutY="526.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ColorPicker>
+                        <Label fx:id="titleCustom" layoutX="59.0" layoutY="126.0" text="Personnalisation" textFill="WHITE" underline="true">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="previewWallpaper2" fitHeight="93.0" fitWidth="274.0" layoutX="242.0" layoutY="237.0" onMouseClicked="#wallpaperClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/wall2.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="previewWallpaper4" fitHeight="93.0" fitWidth="274.0" layoutX="600.0" layoutY="237.0" onMouseClicked="#wallpaperClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/wall4.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="previewWallpaper5" fitHeight="93.0" fitWidth="274.0" layoutX="61.0" layoutY="347.0" onMouseClicked="#wallpaperClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/wall5.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="previewWallpaper6" fitHeight="93.0" fitWidth="274.0" layoutX="242.0" layoutY="347.0" onMouseClicked="#wallpaperClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/wall6.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="previewWallpaper8" fitHeight="93.0" fitWidth="274.0" layoutX="600.0" layoutY="347.0" onMouseClicked="#wallpaperClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/wall8.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="previewWallpaper3" fitHeight="93.0" fitWidth="274.0" layoutX="423.0" layoutY="237.0" onMouseClicked="#wallpaperClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/wall3.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="previewWallpaper7" fitHeight="93.0" fitWidth="274.0" layoutX="423.0" layoutY="347.0" onMouseClicked="#wallpaperClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/wall7.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="previewWallpaperCustom" fitHeight="93.0" fitWidth="194.0" layoutX="839.0" layoutY="284.0" onMouseClicked="#wallpaperClick" pickOnBounds="true">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <ImageView fx:id="searchImage" fitHeight="59.0" fitWidth="77.0" layoutX="888.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Select%20File.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label fx:id="wallTitle" layoutX="59.0" layoutY="190.0" text="Fond d'écran :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="blurText" layoutX="55.0" layoutY="460.0" text="Arrière plan flou :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="blurCheck" layoutX="279.0" layoutY="467.0" mnemonicParsing="false">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <Label fx:id="darkText" layoutX="55.0" layoutY="490.0" text="Arrière plan sombre :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="darkCheck" layoutX="279.0" layoutY="497.0" mnemonicParsing="false">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</Pane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bnls_box_rel0aded.menuController">
+   <children>
+      <ImageView fx:id="wallpaperView" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/wall4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="selector" blendMode="OVERLAY" fitHeight="150.0" fitWidth="311.0" layoutX="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Selector.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="gameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="197.0" onMouseClicked="#playClick" prefHeight="44.0" prefWidth="96.0" text="Jouer" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="settingsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="130.0" layoutY="297.0" onMouseClicked="#paramClick" prefHeight="60.0" prefWidth="157.0" text="Paramètres" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="aboutLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="397.0" onMouseClicked="#aboutClick" prefHeight="60.0" prefWidth="129.0" text="A propos" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="quitLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="230.0" layoutY="497.0" onMouseClicked="#quitClick" prefHeight="60.0" prefWidth="108.0" text="Quitter" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="530.0" layoutY="16.0" onMouseClicked="#playClick" prefHeight="27.0" prefWidth="221.0" text="BNL's Box Rel0aded" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="24.0" />
+         </font>
+      </Label>
+      <MediaView fx:id="animationScreen" fitHeight="720.0" fitWidth="1280.0" preserveRatio="false">
+         <viewport>
+            <Rectangle2D height="720.0" width="1280.0" />
+         </viewport>
+      </MediaView>
+   </children>
+</Pane>

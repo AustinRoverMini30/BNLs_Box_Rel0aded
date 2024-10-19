@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bnls_box_rel0aded.helpController">
+   <children>
+      <ImageView fx:id="wallpaperView" fitHeight="529.0" fitWidth="854.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Image/wall4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="selector" blendMode="OVERLAY" fitHeight="150.0" fitWidth="311.0" layoutX="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Selector.png" />
+         </image>
+         <effect>
+            <InnerShadow>
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <Label layoutX="402.0" layoutY="16.0" text="Aide" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="24.0" />
+         </font>
+      </Label>
+      <TabPane fx:id="tabPane" layoutY="97.0" prefHeight="431.0" prefWidth="853.0" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Les bases">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="594.0" prefWidth="821.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="404.0" prefWidth="853.0">
+                           <children>
+                              <Label fx:id="helpText1" text="Les bases du morpion" textFill="WHITE">
+                                 <font>
+                                    <Font name="MS Gothic" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="229.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/Tic Tac Toe.gif" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="helpText2" prefHeight="105.0" prefWidth="706.0" text="Basé sur des jeux dont l'origine remonte à l'Antiquité, le Morpion (ou Tic Tac Toe) est un jeu simple qui se joue habituellement sur papier. L'objectif ? Aligner 3 cases de même symbole sur le plateau, horizontalement, verticalement, ou diagonalement. Chaque joueur joue à tour de rôle jusqu'à ce que la partie se termine." textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Comment jouer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="404.0" prefWidth="853.0">
+                           <children>
+                              <Label fx:id="helpText3" text="Comment jouer ?" textFill="WHITE">
+                                 <font>
+                                    <Font name="MS Gothic" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="225.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/How To Play.gif" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label fx:id="helpText4" prefHeight="105.0" prefWidth="706.0" text="Jouer au Morpion n'aura jamais été aussi simple ! Votre tour est indiqué par le label en bas à droite. Il vous suffit de cliquer sur la case de votre choix, et cette dernière prendra automatiquement l'apparence de l'image que vous aurez choisie plus tôt. Quand la partie s'achève, les cases gagnantes sont visibles, tandis que les autres s'estompent." textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

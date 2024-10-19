@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bnls_box_rel0aded.updateAvaillableController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="282.0" fitWidth="564.0" layoutX="18.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Update_label.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="updateLabel" alignment="CENTER" layoutX="57.0" layoutY="213.0" prefHeight="21.0" prefWidth="486.0" text="Nouvelle version disponible" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="versionGameLabel" layoutX="18.0" layoutY="272.0" prefHeight="21.0" prefWidth="467.0" text="BNL's Box Rel0aded Game :" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="versionUpdateLabel" layoutX="18.0" layoutY="306.0" prefHeight="21.0" prefWidth="467.0" text="BNL's Box Rel0aded Update Utility : " textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelUpdateButton" layoutX="150.0" layoutY="375.0" mnemonicParsing="false" prefWidth="100.0" text="Annuler" />
+      <Button fx:id="confirmUpdateButton" layoutX="350.0" layoutY="375.0" mnemonicParsing="false" prefWidth="100.0" text="Mettre à jour" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="558.0" layoutY="211.0" prefHeight="25.0" prefWidth="24.0" visible="false" />
+      <ProgressBar fx:id="progressBar" layoutX="14.0" layoutY="342.0" prefHeight="18.0" prefWidth="572.0" progress="0.0" visible="false" />
+   </children>
+</Pane>
