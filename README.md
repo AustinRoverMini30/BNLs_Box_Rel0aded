@@ -17,14 +17,35 @@ Un jeu de Morpion développé en JavaFX dans le cadre d'un travail tuteuré, met
 
 ## Captures d'écran
 
-### Écran du jeu
-![Capture d'écran - Jeu](#)
-
 ### Menu principal
-![Capture d'écran - Menu principal](#)
+![Capture d'écran - Menu principal](screenshots/menu.png)
 
 ### Menu des paramètres
-![Capture d'écran - Menu des paramètres](#)
+![Capture d'écran - Menu des paramètres](screenshots/settings.png)
+![Capture d'écran - Menu des paramètres](screenshots/settings2.png)
+
+### Configuration du jeu
+![Capture d'écran - Configuration du jeu](screenshots/gameconfig.png)
+
+### Écran du jeu
+![Capture d'écran - Jeu](screenshots/game.png)
+![Capture d'écran - Jeu](screenshots/game2.png)
+![Capture d'écran - Jeu](screenshots/game_win.png)
+
+### Classement
+![Capture d'écran - Classement](screenshots/leaderboard.png)
+
+### Section d'aide
+![Capture d'écran - Aide](screenshots/rules.png)
+![Capture d'écran - Aide](screenshots/rules_1.png)
+
+### Section à propos
+![Capture d'écran - À propos](screenshots/about.png)
+
+### Mise à jour
+![Capture d'écran - Mise à jour](screenshots/update_available.png)
+![Capture d'écran - Mise à jour](screenshots/update_estimation.png)
+![Capture d'écran - Mise à jour](screenshots/update_downloader.png)
 
 ---
 
